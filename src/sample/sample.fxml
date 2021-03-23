@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+
+<GridPane alignment="center" hgap="10" prefHeight="300.0" prefWidth="300.0" vgap="10"
+          xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="sample.Controller">
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0"/>
+      <RowConstraints minHeight="10.0" prefHeight="30.0"/>
+      <RowConstraints minHeight="10.0" prefHeight="30.0"/>
+      <RowConstraints minHeight="10.0" prefHeight="30.0"/>
+      <RowConstraints minHeight="10.0" prefHeight="30.0"/>
+      <RowConstraints minHeight="10.0" prefHeight="30.0"/>
+   </rowConstraints>
+   <columnConstraints>
+      <ColumnConstraints minWidth="10.0" prefWidth="130.0"/>
+      <ColumnConstraints halignment="RIGHT" minWidth="10.0" prefWidth="130.0"/>
+   </columnConstraints>
+   <Label text="Annual Interest Rate:"/>
+   <Label text="Number of Years:" GridPane.rowIndex="1"/>
+   <Label text="Load Amount:" GridPane.rowIndex="2"/>
+   <Label text="Monthly Payment:" GridPane.rowIndex="3"/>
+   <Label text="Total Payment:" GridPane.rowIndex="4"/>
+   <TextField fx:id="tfAnnualInterestRate" alignment="CENTER_RIGHT" GridPane.columnIndex="1"/>
+   <TextField fx:id="tfNumberOfYears" alignment="CENTER_RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+   <TextField fx:id="tfLoanAmount" alignment="CENTER_RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+   <TextField fx:id="tfMonthlyPayment" alignment="CENTER_RIGHT" disable="true" editable="false" GridPane.columnIndex="1"
+              GridPane.rowIndex="3"/>
+   <TextField fx:id="tfTotalPayment" alignment="CENTER_RIGHT" disable="true" editable="false" GridPane.columnIndex="1"
+              GridPane.rowIndex="4"/>
+   <Button mnemonicParsing="false" onAction="#calculateLoadPayment" text="Calculate" GridPane.columnIndex="1"
+           GridPane.rowIndex="5"/>
+   <Button mnemonicParsing="false" onAction="#clear" text="Clear" GridPane.rowIndex="5"/>
+</GridPane>

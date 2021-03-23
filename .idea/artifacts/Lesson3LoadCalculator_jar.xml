@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Lesson3LoadCalculator:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Lesson3LoadCalculator_jar</output-path>
+    <root id="archive" name="Lesson3LoadCalculator.jar">
+      <element id="module-output" name="Lesson3LoanCalculator" />
+    </root>
+  </artifact>
+</component>
